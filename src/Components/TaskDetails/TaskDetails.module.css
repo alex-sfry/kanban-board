@@ -1,0 +1,66 @@
+.taskDetails {
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	color: #000000;
+	font-family: 'Roboto';
+	font-weight: 400;
+	padding: 22px 530px 44px 28px;
+	position: relative;
+}
+
+.taskDetails.isEditActive {
+	background-color: #EBECF0;
+}
+
+.title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: inherit;
+}
+
+.description, .editDescription {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 35px 0px;
+	white-space: pre-line;
+}
+
+.btnEdit {
+	background: 0;
+	border: 0;
+	border-radius: 5px;
+	width: 64px;
+	height: 18px;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 14px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	cursor: pointer;
+}
+
+.btnClose {
+	position: absolute;
+	top: 17px;
+	right: 24px;
+	width: 24px;
+	height: 23px;
+	background: 0;
+	cursor: pointer;
+}
+
+.editDescription {
+	outline: 0;
+	height: calc(100% - 110px);
+	width: 100%;
+	resize: none;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 10px;
+}
+
+.form {
+	height: 100%;
+	width: 100%;
+}

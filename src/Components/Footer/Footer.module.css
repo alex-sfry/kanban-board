@@ -1,0 +1,26 @@
+.footer {
+	background-color: #0067A3;
+	height: 55px;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.container {
+	max-width: 1235px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.counter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 36px;	
+}

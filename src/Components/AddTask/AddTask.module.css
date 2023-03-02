@@ -1,0 +1,25 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.inputDiv {
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 7px 8px;
+}
+
+.input {
+	background: 0;
+	outline: 0;
+	border: 0;
+	width: 100%;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.input:not(:focus) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}

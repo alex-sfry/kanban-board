@@ -1,0 +1,46 @@
+.btn {
+	cursor: pointer;
+	width: 102px;
+	height: 29px;
+	border: none;
+	border-radius: 5px;
+	background: #EBECF0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 18px;
+	line-height: 21px;	
+}
+
+.btn:hover:not(.btnAdd[disabled], .btnSubmit) {
+	background: #FFFFFF;
+}
+
+.btnAdd {
+	color: #5E6C84;
+}
+
+.btnAdd[disabled] {
+	opacity: 0.5;
+	cursor: auto;
+}
+
+.btnHidden {
+	display: none;
+}
+
+.btnSubmit {
+	background: #0079BF;
+	color: #FFFFFF;
+}
+
+.btnClose {
+	position: absolute;
+	top: 17px;
+	right: 23px;
+	width: 23px;
+	height: 23px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding-bottom: 1px;
+}

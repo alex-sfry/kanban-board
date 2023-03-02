@@ -1,0 +1,14 @@
+.main {
+	height: calc(100% - 110px);
+	background-color: #0079BF;
+}
+
+.container {
+	max-width: 1235px;
+	display: flex;
+	justify-content: space-between;	
+	padding: 20px 17px 32px;
+	margin: 0 auto;
+	gap: 24px;
+	height:100%;
+}
