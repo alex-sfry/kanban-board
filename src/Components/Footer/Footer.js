@@ -13,7 +13,7 @@ const Footer = ({ tasks }) => {
 					<p>Active tasks: {backlogCount}</p>
 					<p>Finished tasks: {finishedCount}</p>
 				</div>
-				<p>Kanban board by noName, 2023</p>
+				<p>Kanban board by AlexT, 2023</p>
 			</div>
 		</footer>
 	)

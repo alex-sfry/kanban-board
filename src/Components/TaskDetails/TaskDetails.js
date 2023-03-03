@@ -12,8 +12,9 @@ const TaskDetails = ({ tasks, setTasks }) => {
 	const getIssue = () => {
 		const currentIssue = tasks.map((task, index) => {
 			const findIssue = task.issues.find(issue => issue.id === id)
-			//return array: issue object + index of task list
+			//return array: 1st element - issue object, 2nd element - index of task list
 			if (findIssue) return [findIssue, index]
+			//return null for all other issues
 			return null;
 		})
 		return currentIssue.find(item => item !== null)
@@ -35,7 +36,6 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		const updatedTasks = tasks.map((item, index) => {
 			if (index === currentIssue[1]) {
 				item.issues[item.issues.indexOf(currentIssue[0])] = currentIssue[0]
-				console.log(item.issues.indexOf(currentIssue[0]))
 			}
 			return item
 		})
@@ -48,14 +48,23 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		if (!isActive) {
 			return (
 				<>
+					<h2 className={css.title}>{getIssue()[0].name}</h2>
 					<p className={css.description}>{currentIssue.description || defaultDescription}</p>
-					<button className={css.btnEdit} onClick={handleClick}>Edit...</button>
+					<Button
+						btnClass={'btnEdit'}
+						disabled={false}
+						handleClick={handleClick}
+					>
+						Edit...
+					</Button>
+					{/* <button className={css.btnEdit} onClick={handleClick}>Edit...</button> */}
 				</>
 			)
 		} else {
 			return (
 				<form className={css.form} onSubmit={handleSubmit}>
-					<textarea className={css.editDescription} value={textValue} onChange={onChange}></textarea>
+					<label for='description' className={css.title}>{getIssue()[0].name}</label>
+					<textarea name='description' className={css.editDescription} value={textValue} onChange={onChange}></textarea>
 					<Button
 						type={'submit'}
 						btnClass={'btnSubmit'}
@@ -66,10 +75,9 @@ const TaskDetails = ({ tasks, setTasks }) => {
 			)
 		}
 	}
-
+	console.log('details')
 	return (
-		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
-			<h2 className={css.title}>{getIssue().name}</h2>
+		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>			
 			{renderConditions()}
 			<Link to={'/'}>
 				<Close />

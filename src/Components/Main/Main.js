@@ -5,6 +5,7 @@ import Board from '../Board';
 import TaskDetails from '../TaskDetails';
 
 const Main = props => {
+	console.log('main')
 	return (
 		<main className={css.main}>
 			<div className={css.container}>				

@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 //import dataMock from './mock';
 
 function App() {
-	// empty localstorage --> initial state = array with list titles and empty issues arrays)
+	// empty localstorage --> initial state = array with list titles and empty issues arrays
 	const initialState = [
 		{
 			title: 'backlog',
@@ -29,6 +29,7 @@ function App() {
 	useEffect(() => {
 		window.localStorage.setItem('tasks', JSON.stringify(tasks))
 	}, [tasks])
+
 	return (	
 		<div className='wrapper'>
 			<Header />

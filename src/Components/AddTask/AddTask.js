@@ -9,7 +9,6 @@ function AddTask({ updateTasks, setButtonClicked, listTasks }) {
 	const handleChange = (e) => {
 		setValue(e.target.value)
 	}
-
 	const handleSubmit = (e) => {
 		e.preventDefault()
 
@@ -25,9 +24,7 @@ function AddTask({ updateTasks, setButtonClicked, listTasks }) {
 
 	return (
 		<form className={css.form} onSubmit={handleSubmit}>
-			<div className={css.inputDiv}>
-				<input name='title' type='text' className={css.input} onChange={handleChange} value={title}></input>
-			</div>
+				<input name='title' type='text' className={css.input} onChange={handleChange} value={title} placeholder='New task title... '></input>
 			<Button
 				type={'submit'}
 				btnClass={'btnSubmit'}

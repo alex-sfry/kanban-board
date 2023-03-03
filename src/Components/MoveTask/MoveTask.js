@@ -15,7 +15,7 @@ function MoveTask({ updateTasks, optionList, listTasks, setButtonClicked }) {
 		updateTasks(updatedListTasks, updatedPrevListTasks)
 		setButtonClicked(false)
 	}
-
+	console.log('MoveTask')
 	return (
 		<select name='select' id='select' className={css.select} onChange={handleChange}>
 			<option value=''></option>

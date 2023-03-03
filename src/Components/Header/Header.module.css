@@ -11,14 +11,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 15px;
+	padding: 0 16px;
 	margin: 0 auto;
-}
-
-.login {
-	width: 64px;
-	height: 40px;
-	border: 1px solid black;
 }
 
 .logo {

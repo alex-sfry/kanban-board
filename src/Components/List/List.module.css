@@ -19,8 +19,6 @@
 	padding: 12px 12px 8px 12px;
 }
 
-.card
-
 .listTitle {
 	font-size: inherit;
 	font-weight: inherit;
@@ -37,11 +35,12 @@
 	background: #FFFFFF;
 	border-radius: 5px;
 	padding: 7px 8px;
+	position: relative;
 }
 
 .listItem:hover {
-	cursor: pointer;
 	text-decoration: underline;
+	transition: all 500ms;	
 }
 
 .icon {

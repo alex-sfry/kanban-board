@@ -1,10 +1,10 @@
 import React from 'react';
 import css from './Template.module.css';
 
-function Template(props) {
+const Template= props => {
 	return (
 		<>
-			<button></button>
+			
 		</>
 	)
 }

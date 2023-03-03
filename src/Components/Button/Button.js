@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Button.module.css';
 import withCloseCross from '../withCloseCross'
 
-export const Button = ({ children, btnClass, disabled, handleClick, type, render }) => {
+export const Button = ({ children, btnClass, disabled, handleClick, type }) => {
 	return (		
 		<button
 			type={type}
