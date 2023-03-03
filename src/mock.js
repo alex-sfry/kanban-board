@@ -32,11 +32,11 @@ const dataMock = [
 	{
 		title: 'inProgress',
 		issues: [
-			/* {
+			{
 				id: '15694889400239302',
 				name: 'Update API routes',
 				description: 'Update API routes to use the newest versions'
-			} */
+			}
 		]
 	},
 	{

@@ -9,6 +9,7 @@ import AddTask from '../AddTask';
 const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 	const [isButtonClicked, setButtonClicked] = useState(false)
 	const btnDisabled = listTasks.title !== 'backlog' && !prevListTasks.issues.length ? true : false
+	
 	const handleClick = (e) => {
 		e.preventDefault()
 		console.log('click')

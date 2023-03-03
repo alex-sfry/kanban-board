@@ -35,14 +35,34 @@
 	background: #FFFFFF;
 	border-radius: 5px;
 	padding: 7px 8px;
-	position: relative;
 }
 
 .listItem:hover {
 	text-decoration: underline;
-	transition: all 500ms;	
+	background-color: #9cbdff;
 }
 
 .icon {
 	padding-top: 3px;
 }
+
+.card::-webkit-scrollbar, .card::-webkit-scrollbar-thumb {
+	width: 12px;
+}
+
+.card::-webkit-scrollbar-track {
+	background: #FFFFFF;
+}
+
+.card::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #CBCBCB;	
+	border: none; 
+}
+
+@media all and (max-width: 1230px) {
+	.card {
+		overflow-y: none;
+	}
+}
+

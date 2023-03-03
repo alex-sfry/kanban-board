@@ -33,9 +33,14 @@
 	flex-direction: column;
 	gap: 3px;
 	position: absolute;
-	top: 4px;
+	top: 58px;
 	right: 0px;
 	height: 60px;
+	visibility: hidden;
+	opacity: 0;
+	transform-origin: 0 0;
+	transform: rotateX(-90deg);
+	transition: all 200ms linear;
 }
 
 .userMenu::before {
@@ -49,13 +54,13 @@
 	border-color: transparent transparent #FFFFFF transparent;
 }
 
-.user:hover > .menu {
+.isOpen {
 	transform: rotateX(0deg);
 	visibility: visible;
 	opacity: 1;
 }
 
-.user:hover .arrow {
+ .isActive {
 	transform: rotate(-180deg);
 }
 
@@ -64,12 +69,8 @@
 	cursor: pointer;
 }
 
-.menu {
-	height: 70px;
-	visibility: hidden;
-	opacity: 0;
-	transform-origin: 0 0;
-	transform: rotateX(-90deg);
-	transition: all 200ms linear;
-	position: relative;
+@media all and (max-width: 420px) {
+	.arrow {
+		right: 5px;		
+	}
 }

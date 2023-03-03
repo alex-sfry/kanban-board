@@ -63,7 +63,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		} else {
 			return (
 				<form className={css.form} onSubmit={handleSubmit}>
-					<label for='description' className={css.title}>{getIssue()[0].name}</label>
+					<label htmlFor='description' className={css.title}>{getIssue()[0].name}</label>
 					<textarea name='description' className={css.editDescription} value={textValue} onChange={onChange}></textarea>
 					<Button
 						type={'submit'}
@@ -75,7 +75,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 			)
 		}
 	}
-	console.log('details')
+	
 	return (
 		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>			
 			{renderConditions()}

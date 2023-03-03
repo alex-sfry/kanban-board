@@ -24,3 +24,21 @@
 	flex-wrap: wrap;
 	gap: 36px;	
 }
+
+@media all and (max-width: 920px) {
+	.counter {
+		gap: 6px;
+	}	
+}
+
+@media all and (max-width: 1230px) {
+	.container {
+		padding: 0px 10px 0px 10px;
+	}
+}
+
+@media all and (max-width: 280px) {
+	.container {
+		font-size: 16px;
+	}
+}
