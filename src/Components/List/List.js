@@ -45,7 +45,7 @@ const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 				<ul className={css.list}>
 					{listTasks.issues.map(issue => {
 						return (
-							<Link to={`/tasks/${issue.id}`} key={issue.id}>
+							<Link to={`/kanban-board/tasks/${issue.id}`} key={issue.id}>
 								<li className={css.listItem}>{issue.name}</li>
 							</Link>
 						)
