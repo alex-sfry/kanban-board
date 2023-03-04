@@ -77,7 +77,12 @@
 }
 
 @media (hover: none) {
-	.menuItem:hover, .images {
+	.menuItem:hover {
 		cursor: auto;		
+	}
+	
+	.menuItem:hover {
+		background: none;
+		cursor: auto;
 	}
 }
