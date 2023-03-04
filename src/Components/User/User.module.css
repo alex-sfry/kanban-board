@@ -8,6 +8,7 @@
 	cursor: pointer;
 	height: 40px;
 	margin: 7px 0px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .avatar {

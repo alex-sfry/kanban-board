@@ -37,7 +37,7 @@
 
 .description {
 	height: fit-content;
-	white-space: pre-wrap;
+	white-space: normal;
 }
 
 .editDescription {
