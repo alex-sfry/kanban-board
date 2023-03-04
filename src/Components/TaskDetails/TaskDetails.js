@@ -19,8 +19,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		})
 		return currentIssue.find(item => item !== null)
 	}
-	const handleClick = (e) => {
-		e.preventDefault()
+	const handleClick = () => {
 		setIsActive(!isActive)
 		const currentIssue = getIssue()[0]
 		currentIssue.description ? setTextValue(currentIssue.description) : setTextValue(defaultDescription)
@@ -51,13 +50,13 @@ const TaskDetails = ({ tasks, setTasks }) => {
 					<h2 className={css.title}>{getIssue()[0].name}</h2>
 					<p className={css.description}>{currentIssue.description || defaultDescription}</p>
 					<Button
+						type={'submit'}
 						btnClass={'btnEdit'}
 						disabled={false}
 						handleClick={handleClick}
 					>
 						Edit...
 					</Button>
-					{/* <button className={css.btnEdit} onClick={handleClick}>Edit...</button> */}
 				</>
 			)
 		} else {
@@ -75,9 +74,9 @@ const TaskDetails = ({ tasks, setTasks }) => {
 			)
 		}
 	}
-	
+
 	return (
-		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>			
+		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
 			{renderConditions()}
 			<Link to={'/'}>
 				<Close />

@@ -6,6 +6,6 @@
 
 @media all and (max-width: 1230px) {
 	.wrapper {
-		height: 100%;
+		height: fit-content		
 	}
 }

@@ -9,10 +9,8 @@ import AddTask from '../AddTask';
 const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 	const [isButtonClicked, setButtonClicked] = useState(false)
 	const btnDisabled = listTasks.title !== 'backlog' && !prevListTasks.issues.length ? true : false
-	
-	const handleClick = (e) => {
-		e.preventDefault()
-		console.log('click')
+
+	const handleClick = () => {
 		setButtonClicked(!isButtonClicked)
 	}
 	const listControls = () => {
@@ -31,6 +29,7 @@ const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 			/>
 		return (
 			<Button
+				type={'submit'}
 				btnClass={'btnAdd'}
 				disabled={btnDisabled}
 				handleClick={handleClick}>
@@ -53,7 +52,7 @@ const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 					})}
 				</ul>
 				{listControls()}
-			</div>			
+			</div>
 		</div>
 	)
 }

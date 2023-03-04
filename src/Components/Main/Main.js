@@ -7,7 +7,7 @@ import TaskDetails from '../TaskDetails';
 const Main = props => {
 	return (
 		<main className={css.main}>
-			<div className={css.container}>				
+			<div className={css.container}>
 				<Routes>
 					<Route path='/' element={<Board {...props} />} />
 					<Route path='/tasks/:id' element={<TaskDetails {...props} />} />

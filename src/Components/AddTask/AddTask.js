@@ -11,12 +11,11 @@ function AddTask({ updateTasks, setButtonClicked, listTasks }) {
 	}
 	const handleSubmit = (e) => {
 		e.preventDefault()
-
 		if (title) {
 			const updatedListTasks = {
 				title: listTasks.title,
 				issues: [...listTasks.issues, { id: uniqid(), name: title, description: '' }]
-			} 
+			}
 			updateTasks(updatedListTasks)
 		}
 		setButtonClicked(false)
@@ -24,7 +23,7 @@ function AddTask({ updateTasks, setButtonClicked, listTasks }) {
 
 	return (
 		<form className={css.form} onSubmit={handleSubmit}>
-				<input name='title' type='text' className={css.input} onChange={handleChange} value={title} placeholder='New task title... '></input>
+			<input type='text' className={css.input} onChange={handleChange} value={title} placeholder='New task title... '></input>
 			<Button
 				type={'submit'}
 				btnClass={'btnSubmit'}
