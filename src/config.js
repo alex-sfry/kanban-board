@@ -12,10 +12,4 @@ const LIST_TITLES = {
 	[LIST_TYPES.FINISHED]: 'Finished',
 }
 
-/* const LIST_COLORS = {
-	[LIST_TYPES.BACKLOG]: '#b95959',
-	[LIST_TYPES.IN_PROGRESS]: '#4b69b1',
-	[LIST_TYPES.FINISHED]: '#a0b959',
-} */
-
 export { LIST_TYPES, LIST_TITLES }
