@@ -9,6 +9,7 @@ import initialState from './emptyMock'
 function App() {
 	// empty localstorage --> initial state = array with list titles and empty issues arrays	
 	const [tasks, setTasks] = useState(JSON.parse(window.localStorage.getItem('tasks')) || initialState)
+
 	useEffect(() => {
 		window.localStorage.setItem('tasks', JSON.stringify(tasks))
 	}, [tasks])

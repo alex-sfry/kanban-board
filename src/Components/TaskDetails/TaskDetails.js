@@ -50,7 +50,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 					<h2 className={css.title}>{getIssue()[0].name}</h2>
 					<p className={css.description}>{currentIssue.description || defaultDescription}</p>
 					<Button
-						type={'submit'}
+						type={'button'}
 						btnClass={'btnEdit'}
 						disabled={false}
 						handleClick={handleClick}

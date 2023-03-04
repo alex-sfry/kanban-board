@@ -7,7 +7,7 @@ function AddTask({ updateTasks, setButtonClicked, listTasks }) {
 	const [title, setValue] = useState('')
 
 	const handleChange = (e) => {
-		setValue(e.target.value)
+		setValue(e.target.value)		
 	}
 	const handleSubmit = (e) => {
 		e.preventDefault()

@@ -17,6 +17,7 @@
 	max-height: 100%;
 	overflow-y: auto;
 	padding: 12px 12px 8px 12px;
+	width: 100%;
 }
 
 .listTitle {
@@ -35,6 +36,9 @@
 	background: #FFFFFF;
 	border-radius: 5px;
 	padding: 7px 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .listItem:hover {
@@ -63,6 +67,12 @@
 @media all and (max-width: 1230px) {
 	.card {
 		overflow-y: none;
+	}
+}
+
+@media all and (max-width: 320px) {
+	.container {
+		width: 100%;
 	}
 }
 
