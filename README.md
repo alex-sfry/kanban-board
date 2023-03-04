@@ -1,6 +1,7 @@
 ## **Kanban board**
 
 mock.js - mock data used for testing
+
 emptyMock.js - empty array with specific structure is used in final version when localstorage is empty
 
 mock data structure:
