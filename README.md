@@ -1,4 +1,4 @@
-## **Kanban board**
+## **Kanban board** (create-react-app)
 
 mock.js - mock data used for testing
 
