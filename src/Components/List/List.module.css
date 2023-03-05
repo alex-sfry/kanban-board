@@ -64,12 +64,6 @@
 	border: none; 
 }
 
-@media all and (max-width: 1230px) {
-	.card {
-		overflow-y: none;
-	}
-}
-
 @media all and (max-width: 320px) {
 	.container {
 		width: 100%;

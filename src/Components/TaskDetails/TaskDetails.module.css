@@ -7,7 +7,6 @@
 	position: relative;	
 	height: min-content;
 	overflow-y: auto;
-	overflow-x: hidden;
 	height: 100%;
 }
 
@@ -19,10 +18,8 @@
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: inherit;
-	display: block;
 	overflow-wrap: break-word;
 	width: 100%;
-	overflow-x: hidden;
 }
 
 .description, .editDescription {
@@ -32,8 +29,15 @@
 	line-height: 21px;
 	margin: 20px 0px;
 	overflow-wrap: break-word;
+}
+
+.taskDetails,
+.title,
+.description,
+.editDescription {
 	overflow-x: hidden;
 }
+
 
 .description {
 	height: fit-content;
@@ -51,6 +55,23 @@
 
 .form {	
 	width: 100%;	
+}
+
+.taskDetails::-webkit-scrollbar,
+.editDescription::-webkit-scrollbar {
+	width: 12px;
+}
+
+.taskDetails::-webkit-scrollbar-track,
+.editDescription::-webkit-scrollbar-track {
+	background: #FFFFFF;
+}
+
+.taskDetails::-webkit-scrollbar-thumb,
+.editDescription::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #CBCBCB;	
+	border: none; 
 }
 
 @media all and (max-width: 1230px) {
@@ -79,10 +100,18 @@
 	.editDescription {
 		height: calc(100vh - 10px);		
 	}
+	.taskDetails::-webkit-scrollbar,
+	.editDescription::-webkit-scrollbar {
+		width: 8px;
+	}
 }
 
 @media all and (max-width: 280px) {
 	.taskDetails {
 		padding-right: 48px;
+	}
+	.taskDetails::-webkit-scrollbar,
+	.editDescription::-webkit-scrollbar {
+		width: 6px;
 	}
 }
