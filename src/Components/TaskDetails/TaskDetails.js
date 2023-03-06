@@ -47,7 +47,6 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		if (!isActive) {
 			return (
 				<>
-					<h2 className={css.title}>{getIssue()[0].name}</h2>
 					<p className={css.description}>{currentIssue.description || defaultDescription}</p>
 					<Button
 						type={'button'}
@@ -62,7 +61,6 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		} else {
 			return (
 				<form className={css.form} onSubmit={handleSubmit}>
-					<label htmlFor='description' className={css.title}>{getIssue()[0].name}</label>
 					<textarea name='description' className={css.editDescription} value={textValue} onChange={onChange}></textarea>
 					<Button
 						type={'submit'}
@@ -77,6 +75,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 
 	return (
 		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
+			<h2 className={css.title}>{getIssue()[0].name}</h2>
 			{renderConditions()}
 			<Link to={'/kanban-board'}>
 				<Close />
