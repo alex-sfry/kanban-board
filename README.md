@@ -21,7 +21,4 @@ const dataMock = [
 ]
 ```
 
-Routing: 
-root is '/kanban-bord' (not '/') because it doesn't work with github pages when root is '/'
-
 Styling: CSS modules.
