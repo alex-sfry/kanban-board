@@ -77,7 +77,7 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
 			<h2 className={css.title}>{getIssue()[0].name}</h2>
 			{renderConditions()}
-			<Link to={'/kanban-board'}>
+			<Link to={'/'}>
 				<Close />
 			</Link>
 		</div>

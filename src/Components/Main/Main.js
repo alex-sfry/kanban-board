@@ -9,8 +9,8 @@ const Main = props => {
 		<main className={css.main}>
 			<div className={css.container}>
 				<Routes>
-					<Route path='/kanban-board' element={<Board {...props} />} />
-					<Route path='/kanban-board/tasks/:id' element={<TaskDetails {...props} />} />
+					<Route path='/' element={<Board {...props} />} />
+					<Route path='/tasks/:id' element={<TaskDetails {...props} />} />
 				</Routes>
 			</div>
 		</main>
