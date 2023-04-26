@@ -1,5 +1,6 @@
 {	
-  "homepage": "https://alex-sfry.github.io/kanban-board/",
+  //"homepage": "https://alex-sfry.github.io/kanban-board/",
+  "homepage": ".",
   "name": "kanban-board",
   "version": "1.0.0",
   "private": true,  
