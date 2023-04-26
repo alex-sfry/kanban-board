@@ -1,5 +1,7 @@
 ## **Kanban board** (create-react-app)
 
+demo: https://kanban-board-tan.vercel.app/
+
 mock.js - mock data used for testing
 
 emptyMock.js - empty array with specific structure is used in final version when localstorage is empty
