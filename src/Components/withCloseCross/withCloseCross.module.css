@@ -1,4 +1,5 @@
 .close {
+    font-family: inherit;
 	position: absolute;
 	width: 120%;
 	height: 1px;
