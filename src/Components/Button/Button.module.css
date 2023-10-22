@@ -66,12 +66,3 @@
 		background: none;
 	}
 }
-
-@media all and (max-width: 430px) {
-	.btnClose {
-		top: 12px;
-		right: 8px;
-		width: 16px;
-		height: 16px;
-	}
-}

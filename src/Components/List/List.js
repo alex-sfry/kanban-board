@@ -26,14 +26,15 @@ const List = ({ title, listTasks, prevListTasks, updateTasks }) => {
 				optionList={prevListTasks}
 				listTasks={listTasks}
 				setButtonClicked={setButtonClicked}
-			/>
+			    />
 		return (
 			<Button
 				type={'submit'}
 				btnClass={'btnAdd'}
 				disabled={btnDisabled}
 				handleClick={handleClick}>
-				<img src={image} className={css.icon} alt='icon' /> Add card
+				<img src={image} className={css.icon} alt='icon' />
+                Add card
 			</Button>
 		)
 	}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom' 
 import css from './TaskDetails.module.css'
-import { Button, Close } from '../Button/Button'
+import { Button } from '../Button/Button'
+import LinkButton from '../LinkButton'
 
 const TaskDetails = ({ tasks, setTasks }) => {
 	const [isActive, setIsActive] = useState(false)
@@ -77,9 +78,11 @@ const TaskDetails = ({ tasks, setTasks }) => {
 		<div className={isActive ? `${css.taskDetails} ${css.isEditActive}` : `${css.taskDetails}`}>
 			<h2 className={css.title}>{getIssue()[0].name}</h2>
 			{renderConditions()}
-			<Link to={'/'}>
-				<Close />
-			</Link>
+            <div className={css.closeBtnDiv}>
+                <LinkButton variant={'crossLarge'} route={'/'}>
+                    <span className={css.close}></span><span className={css.close}></span>
+                </LinkButton>
+            </div>
 		</div>
 	)
 }

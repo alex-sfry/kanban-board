@@ -1,8 +1,7 @@
 import React from 'react';
 import css from './Button.module.css';
-import withCloseCross from '../withCloseCross'
 
-export const Button = ({ children, btnClass, disabled, handleClick, type }) => {
+export const Button = ({ children, btnClass, disabled, handleClick = null, type }) => {
 	return (
 		<button
 			type={type}
@@ -14,14 +13,4 @@ export const Button = ({ children, btnClass, disabled, handleClick, type }) => {
 		</button>
 	)
 }
-
-const ButtonCloseWindow = ({ children }) => {
-	return (
-		<button className={css.btnClose}>
-			{children}
-		</button>
-	)
-}
-
-export const Close = withCloseCross(ButtonCloseWindow)
 
