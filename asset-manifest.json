@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/kanban-board/static/css/main.a8ff530e.css",
-    "main.js": "/kanban-board/static/js/main.84034bb9.js",
-    "static/js/787.0dc1bfd1.chunk.js": "/kanban-board/static/js/787.0dc1bfd1.chunk.js",
-    "static/media/user-avatar.svg": "/kanban-board/static/media/user-avatar.8c75e22659ff0c8d0c51b327365a7432.svg",
-    "index.html": "/kanban-board/index.html",
-    "static/media/plus.svg": "/kanban-board/static/media/plus.d8fce16f935c6ec2b3e2a1f23c411e42.svg",
-    "static/media/Vector.svg": "/kanban-board/static/media/Vector.9bf3f8711ba85a40967c00df6b1711aa.svg",
-    "static/media/Vector 1.svg": "/kanban-board/static/media/Vector 1.157e19ef20c6da73ccf7.svg",
-    "main.a8ff530e.css.map": "/kanban-board/static/css/main.a8ff530e.css.map",
-    "main.84034bb9.js.map": "/kanban-board/static/js/main.84034bb9.js.map",
-    "787.0dc1bfd1.chunk.js.map": "/kanban-board/static/js/787.0dc1bfd1.chunk.js.map"
+    "main.css": "/static/css/main.fe1b7ab2.css",
+    "main.js": "/static/js/main.e40b9095.js",
+    "static/js/787.0dc1bfd1.chunk.js": "/static/js/787.0dc1bfd1.chunk.js",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
+    "static/media/user-avatar.svg": "/static/media/user-avatar.8c75e22659ff0c8d0c51b327365a7432.svg",
+    "index.html": "/index.html",
+    "static/media/plus.svg": "/static/media/plus.d8fce16f935c6ec2b3e2a1f23c411e42.svg",
+    "static/media/Vector.svg": "/static/media/Vector.9bf3f8711ba85a40967c00df6b1711aa.svg",
+    "static/media/Vector 1.svg": "/static/media/Vector 1.157e19ef20c6da73ccf7.svg",
+    "main.fe1b7ab2.css.map": "/static/css/main.fe1b7ab2.css.map",
+    "main.e40b9095.js.map": "/static/js/main.e40b9095.js.map",
+    "787.0dc1bfd1.chunk.js.map": "/static/js/787.0dc1bfd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8ff530e.css",
-    "static/js/main.84034bb9.js"
+    "static/css/main.fe1b7ab2.css",
+    "static/js/main.e40b9095.js"
   ]
 }
